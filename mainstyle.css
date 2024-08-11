@@ -1,4 +1,13 @@
-/* Header section */
+/* top-nav section */
+.top-nav-section {
+    position: fixed;   /* Navni ekranda qotirib qo'yadi */
+    top: 0;            /* Ekranning yuqori qismida joylashadi */
+    left: 0;           /* Ekranning chap tomonida joylashadi */
+    width: 100%;       /* Nav kengligi ekranga mos keladi */
+    z-index: 1000;     /* Navni boshqa elementlar ustida saqlash uchun yuqori z-index qiymati */
+    background-color: #fff; /* Navning orqa foni */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Pastdan yengil soya qo'shadi */
+}
 .dropdown-toggle {
     width: 75px;
     height: 42px;
@@ -28,6 +37,7 @@
 
 .dropdown-menu.show {
     width: 100%;
+    transform: 5ms ease;
 }
 
 .btn1 {
@@ -49,8 +59,77 @@
     --tw-bg-opacity: 1;
     background-color: rgb(245 247 250 / var(--tw-bg-opacity));
 }
-/* /header section */
+/* /top-nav section */
 
+/* === header section === */
+.header-section {
+    padding-top: 79px;    
+}
+.row {
+    align-items: center;
+    background-color: #F3F6F9;
+    border-radius:15px;
+    padding: 100px;
+    height: 100%;
+}
+
+.col-lg-7 h5 {
+    color: #579CFB;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.col-lg-7 h1{
+    letter-spacing: 2px;
+    font-size: 60px;
+    padding-bottom: 40px;
+}
+
+.btn2 {
+    padding: 12px 18px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease,  box-shadow 0.3s ease; /* O'tish jarayonini sekinlashtirish */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), /* Standart soya */
+    0 0 20px rgba(0, 123, 255, 0.6), /* Nur effektini yaratish uchun yoritilgan soya */
+    0 0 30px rgba(0, 123, 255, 0.5), 
+    0 0 40px rgba(0, 123, 255, 0.4);
+}
+
+.btn2:hover {
+    transform: scale(1.1); /* Buttonni 10% kattalashtiradi */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), /* Standart soya */
+    0 0 20px rgba(0, 123, 255, 0.6), /* Nur effektini yaratish uchun yoritilgan soya */
+    0 0 30px rgba(0, 123, 255, 0.5), 
+    0 0 40px rgba(0, 123, 255, 0.4);
+}
+
+.col-lg-5 form video{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    float: left;
+    box-shadow: 30px 30px #C7E3FD;
+    margin-right: 15px;
+}
+
+.col-lg-5 {
+    height: 350px;
+}
+
+.col-lg-5 img {
+    position: sticky;
+    top: 500px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
 
 
 
