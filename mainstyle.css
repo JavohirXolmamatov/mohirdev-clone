@@ -214,6 +214,21 @@
     /* === about-section finish === */
 
     /* === fikrlar-section start === */
+    .fikrlar .row .scroll-main-button {
+        justify-content: space-between;
+    }
+
+    .scroll-container .row .card-img:hover {
+        background-color: #4DA3FB;
+        transition: 0.5s ease;
+        border-radius: 6px;
+    }
+
+    .scroll-container .row .card-img:hover .btn{
+        display: block !important;
+        transition: 1s ease;
+        padding: 14px 22px;
+    }
    
 }
 
