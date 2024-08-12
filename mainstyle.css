@@ -1,136 +1,221 @@
-/* top-nav section */
-.top-nav-section {
-    position: fixed;   /* Navni ekranda qotirib qo'yadi */
-    top: 0;            /* Ekranning yuqori qismida joylashadi */
-    left: 0;           /* Ekranning chap tomonida joylashadi */
-    width: 100%;       /* Nav kengligi ekranga mos keladi */
-    z-index: 1000;     /* Navni boshqa elementlar ustida saqlash uchun yuqori z-index qiymati */
-    background-color: #fff; /* Navning orqa foni */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Pastdan yengil soya qo'shadi */
-}
-.dropdown-toggle {
-    width: 75px;
-    height: 42px;
-    border-radius: 8px;
-    text-align: center;
-    padding: 0 2px;
-    --tw-border-opacity: 1;
-    border-color: rgb(63 156 251 / var(--tw-border-opacity));
-    --tw-bg-opacity: 1;
-    background-color: rgb(245 247 250 / var(--tw-bg-opacity));
+
+/* X-Small devices (portrait phones, less than 576px) */ 
+/* No media query for `xs` since this is the default in Bootstrap */ 
+
+/* Small devices (landscape phones, 576px and up) */ 
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */ 
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */ 
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */ 
+@media (min-width: 1200px) {
+    /* top-nav section */
+    .top-nav-section {
+        position: fixed;   /* Navni ekranda qotirib qo'yadi */
+        top: 0;            /* Ekranning yuqori qismida joylashadi */
+        left: 0;           /* Ekranning chap tomonida joylashadi */
+        width: 100%;       /* Nav kengligi ekranga mos keladi */
+        z-index: 1000;     /* Navni boshqa elementlar ustida saqlash uchun yuqori z-index qiymati */
+        background-color: #fff; /* Navning orqa foni */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Pastdan yengil soya qo'shadi */
+    }
+    .dropdown-toggle {
+        width: 75px;
+        height: 42px;
+        border-radius: 8px;
+        text-align: center;
+        padding: 0 2px;
+        --tw-border-opacity: 1;
+        border-color: rgb(63 156 251 / var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(245 247 250 / var(--tw-bg-opacity));
+    }
+
+    .dropdown-toggle img {
+        width: 22px;
+    }
+
+    .dropdown-menu {
+        min-width: 20px;
+        height: 70px;
+        border-radius: 8px;
+        padding: 0 2px;
+    }
+
+    .dropdown-menu img {
+        width: 22px;
+    }
+
+    .dropdown-menu.show {
+        width: 100%;
+        transform: 5ms ease;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 50px;
+        border-radius: 8px;
+        --tw-border-opacity: 1;
+        border-color: rgb(63 156 251 / var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(245 247 250 / var(--tw-bg-opacity));
+        font-weight: 500;
+        border: 2px solid;
+        border-color: rgb(63 156 251 / var(--tw-border-opacity));
+    }
+
+    .btn1:hover {
+        --tw-border-opacity: 1;
+        border-color: rgb(63 156 251 / var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(245 247 250 / var(--tw-bg-opacity));
+    }
+    /* /top-nav section */
+
+    /* === header section === */
+    .header-section {
+        padding-top: 79px;    
+    }
+    .header-section .row {
+        align-items: center;
+        background-color: #F3F6F9;
+        border-radius:15px;
+        padding: 100px 0 100px 70px;
+        height: 100%;
+        margin: 0;
+    }
+
+    .col-lg-7 h5 {
+        color: #579CFB;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+    .col-lg-7 span{
+        letter-spacing: 2px;
+        font-size: 60px;
+    }
+
+    .btn2 {
+        margin-top: 50px;
+        padding: 12px 18px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease,  box-shadow 0.3s ease; /* O'tish jarayonini sekinlashtirish */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), /* Standart soya */
+        0 0 20px rgba(0, 123, 255, 0.6), /* Nur effektini yaratish uchun yoritilgan soya */
+        0 0 30px rgba(0, 123, 255, 0.5), 
+        0 0 40px rgba(0, 123, 255, 0.4);
+    }
+
+    .btn2:hover {
+        transform: scale(1.1); /* Buttonni 10% kattalashtiradi */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), /* Standart soya */
+        0 0 20px rgba(0, 123, 255, 0.6), /* Nur effektini yaratish uchun yoritilgan soya */
+        0 0 30px rgba(0, 123, 255, 0.5), 
+        0 0 40px rgba(0, 123, 255, 0.4);
+    }
+
+    .header-col-lg-5 form video{
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        object-fit: cover;
+        float: left;
+        box-shadow: 30px 30px #C7E3FD;
+        margin-right: 15px;
+    }
+
+    .header-col-lg-5 {
+        height: 350px;
+    }
+
+    .header-col-lg-5 img {
+        position: sticky;
+        top: 500px;
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+    /* === header section finish === */
+
+    /* === main section start === */
+    .main-section {
+        padding: 100px 0;
+    }
+
+    .diagramma .row .col-lg-2 h1{
+        color: #007bff;
+    }
+
+    .diagramma .row .col-lg-2 h5{
+        font-weight: 400;
+    }
+    .diagramma .row .col-lg-6 .card-circle {
+        border-radius: 20px;
+    }
+
+    .diagramma .row .col-lg-6 .card .card-body .btn {
+        border: 1px solid white;
+    }
+
+    .diagramma .row .col-lg-6 .card .bi-stopwatch-fill {
+        font-size: 60px;
+        padding: 20px 0;
+    }
+    /* === main section finish === */
+
+    /* === about-section start === */
+
+    .about-section .card {
+        background-color:  #003866;
+        border-radius: 18px;
+    }
+
+    .about-section .card .row {
+        flex-wrap: wrap;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .about-section .card .row .col-lg-6 h5{
+        color: #007bff;
+    }
+
+    .about-section .card .row .col-lg-6 .about-button a{
+        padding: 14px 28px;
+        background-color: #579CFB;
+        border-radius: 8px;
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .about-section .card .row .col-lg-6 .about-button a i {
+        font-size: 14px;
+        padding-right: 8px;
+    }
+
+    .about-section .card .row .col-lg-6 .about-button a:hover {
+        transform: scale(10);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 123, 255, 0.6), 0 0 30px rgba(0, 123, 255, 0.5), 0 0 40px rgba(0, 123, 255, 0.4);
+    }
+    /* === about-section finish === */
+
+    /* === fikrlar-section start === */
+   
 }
 
-.dropdown-toggle img {
-    width: 22px;
-}
-
-.dropdown-menu {
-    min-width: 20px;
-    height: 70px;
-    border-radius: 8px;
-    padding: 0 2px;
-}
-
-.dropdown-menu img {
-    width: 22px;
-}
-
-.dropdown-menu.show {
-    width: 100%;
-    transform: 5ms ease;
-}
-
-.btn1 {
-    width: 100px;
-    height: 50px;
-    border-radius: 8px;
-    --tw-border-opacity: 1;
-    border-color: rgb(63 156 251 / var(--tw-border-opacity));
-    --tw-bg-opacity: 1;
-    background-color: rgb(245 247 250 / var(--tw-bg-opacity));
-    font-weight: 500;
-    border: 2px solid;
-    border-color: rgb(63 156 251 / var(--tw-border-opacity));
-}
-
-.btn1:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(63 156 251 / var(--tw-border-opacity));
-    --tw-bg-opacity: 1;
-    background-color: rgb(245 247 250 / var(--tw-bg-opacity));
-}
-/* /top-nav section */
-
-/* === header section === */
-.header-section {
-    padding-top: 79px;    
-}
-.row {
-    align-items: center;
-    background-color: #F3F6F9;
-    border-radius:15px;
-    padding: 100px;
-    height: 100%;
-}
-
-.col-lg-7 h5 {
-    color: #579CFB;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-}
-.col-lg-7 h1{
-    letter-spacing: 2px;
-    font-size: 60px;
-    padding-bottom: 40px;
-}
-
-.btn2 {
-    padding: 12px 18px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease,  box-shadow 0.3s ease; /* O'tish jarayonini sekinlashtirish */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), /* Standart soya */
-    0 0 20px rgba(0, 123, 255, 0.6), /* Nur effektini yaratish uchun yoritilgan soya */
-    0 0 30px rgba(0, 123, 255, 0.5), 
-    0 0 40px rgba(0, 123, 255, 0.4);
-}
-
-.btn2:hover {
-    transform: scale(1.1); /* Buttonni 10% kattalashtiradi */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), /* Standart soya */
-    0 0 20px rgba(0, 123, 255, 0.6), /* Nur effektini yaratish uchun yoritilgan soya */
-    0 0 30px rgba(0, 123, 255, 0.5), 
-    0 0 40px rgba(0, 123, 255, 0.4);
-}
-
-.col-lg-5 form video{
-    width: 200px;
-    height: 200px;
-    border-radius: 15px;
-    object-fit: cover;
-    float: left;
-    box-shadow: 30px 30px #C7E3FD;
-    margin-right: 15px;
-}
-
-.col-lg-5 {
-    height: 350px;
-}
-
-.col-lg-5 img {
-    position: sticky;
-    top: 500px;
-    width: 200px;
-    height: 200px;
-    border-radius: 15px;
-    object-fit: cover;
-}
-
-
-
-
+/* XX-Large devices (larger desktops, 1400px and up) */ 
+@media (min-width: 1400px) {}
