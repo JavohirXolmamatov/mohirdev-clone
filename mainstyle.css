@@ -245,9 +245,24 @@
         font-size: 18px;
         font-weight: 500
     }
-
-
     /* === fikrlar-section finish === */
+
+    /* === Kasblar section start === */
+    .kasblar {
+        background-color: #091621;
+    }
+
+    .kasblar .kasblar-button .btn{
+        padding: 12px 24px !important;
+    }
+
+
+
+    
+    /* === Kasblar section finish === */
+
+
+
    
 }
 
