@@ -218,17 +218,36 @@
         justify-content: space-between;
     }
 
+    .scroll-container .row .card {
+        height: 525px;
+        background-color: #e9edf1;
+        text-align: center;
+        border: 0;
+    }
+
     .scroll-container .row .card-img:hover {
         background-color: #4DA3FB;
         transition: 0.5s ease;
-        border-radius: 6px;
     }
 
-    .scroll-container .row .card-img:hover .btn{
+    .scroll-container .row .card-img:hover .card-button {
+        position: absolute;
         display: block !important;
-        transition: 1s ease;
-        padding: 14px 22px;
+        top: 300px;
+        transition: 0.5s ease;
+        border-radius: 6px;
     }
+    .scroll-container .row .card .card-body {
+        background-color: white;
+    }
+    .fikrlar .row .col-lg-12 a{
+        padding: 14px 28px;
+        font-size: 18px;
+        font-weight: 500
+    }
+
+
+    /* === fikrlar-section finish === */
    
 }
 
